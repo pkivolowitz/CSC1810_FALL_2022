@@ -168,6 +168,17 @@ terminal. Now, BREW should be installed.
 
 ---
 
+### For Both Windows and Mac
+
+#### Getting the Project Creator
+
+THIS SECTION IS NOT WRITTEN YET - HOWEVER, THE COMMAND BELOW WILL
+BE WHAT YOU NEED.
+
+```text
+wget https://www.mediafire.com/file/eew2hitafpf3pnl/create_project.command/file
+```
+
 ## Recordings from Prior Year's Classes
 
 Fall 2020 videos can be found [here](https://www.youtube.com/playlist?list=PLnE1d1TMuFwP4kvuOmj3k_lRjmsnKaG3t).
