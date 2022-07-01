@@ -176,7 +176,7 @@ THIS SECTION IS NOT WRITTEN YET - HOWEVER, THE COMMAND BELOW WILL
 BE WHAT YOU NEED.
 
 ```text
-wget https://www.mediafire.com/file/eew2hitafpf3pnl/create_project.command/file
+wget https://www.mediafire.com/file/eew2hitafpf3pnl/create_project.command
 ```
 
 ## Recordings from Prior Year's Classes
