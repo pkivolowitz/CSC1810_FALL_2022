@@ -107,7 +107,7 @@ prior authorization.
 
 Note: There is no complete agreement among the CS Professors about
 what constitutes the *right* environment. I use the most Linux-like
-environment I can reasonably manager. This means:
+environment I can reasonably manage. This means:
 
 * Visual Studio Code (so Mac, Windows and Linux are the same).
 
@@ -167,13 +167,19 @@ Steps", namely copy and pasting the two shell commands into your
 terminal. Now, BREW should be installed.
 
 ---
+### Installing the Environment on Windows
+
+I have authored a single video covering the entire process. It
+is found [here](https://youtu.be/VLr2PwyxVSM). I have added an
+index of the video in its description. Click "Show More" to
+reveal the index.
 
 ### For Both Windows and Mac
 
 #### Getting the Project Creator
 
-THIS SECTION IS NOT WRITTEN YET - HOWEVER, THE COMMAND BELOW WILL
-BE WHAT YOU NEED.
+On the Mac, you will first had to install `wget` using BREW. This
+is described above.
 
 ```text
 wget https://www.mediafire.com/file/eew2hitafpf3pnl/create_project.command
@@ -192,4 +198,3 @@ StoryTeller to explain code. He has developed a course
 specifically for this class.
 
 Please find it [here](https://markm208.github.io/cppbook/).
-
