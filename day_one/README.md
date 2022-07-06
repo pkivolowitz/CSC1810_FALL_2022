@@ -62,7 +62,7 @@ you cursor in the text of the markdown file, a markdown preview
 can be displayed by pressing APPLE-k then v on the Mac. On
 Windows, it would be CNTRL-k then v.
 
-### Special keys on Mac and Windows
+## Special keys on Mac and Windows
 
 CNTRL is an abbreviation
 for holding down the control key while pressing another key.
@@ -74,3 +74,21 @@ The APPLE key might be written as ⌘.
 The ALT key is also used. On Windows, this is called the ALT key.
 On the Mac, where people "think different", the key is called
 "option" and is abbreviated ⌥.
+
+## Other miscellany
+
+Computer people have different names for a lot of things. The
+less well we are understood by non-computer folk, the more money
+we make. Just kidding. Not kidding.
+
+| Symbol(s) | Are called... |
+| ------- | ------------ |
+| { } | Braces |
+| [ ] | Brackets |
+| ( ) | Parentheses |
+| < > | Might be less than and greater than or Angle Brackets |
+| / | Slash |
+| \\  | Bash (back slash) |
+| ! | Bang |
+| . | Dot or period |
+| \| | Pipe |
