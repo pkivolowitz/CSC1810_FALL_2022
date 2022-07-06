@@ -1,6 +1,7 @@
 # CSC1810 FALL 2022 SECTIONS 1 and 2
 
-This is the class web page for CSC1810 in Fall of 2022 at Carthage College
+This is the class web page for CSC1810 in Fall of 2022 at Carthage
+College
 
 Most of you will not read this page. This is sad. See next.
 
@@ -20,7 +21,8 @@ As. If. This. Was. A. Bad. Thing.
 
 ## Syllabus
 
-The syllabus is found [here](./syllabus/CSC%201810%20Fa22%20Kivolowitz.pdf).
+The syllabus is found
+[here](./syllabus/CSC%201810%20Fa22%20Kivolowitz.pdf).
 
 Most of you will not read the syllabus. This is sad. See previous.
 
@@ -43,11 +45,13 @@ exactly that. For example, a B+ will be reduced to a C+.**
 
 From the [syllabus](./syllabus/CSC%201810%20Fa22%20Kivolowitz.pdf):
 
-**We meet for 65 minutes. There is little room to “leave early.” 
-Therefore, leaving a class early will be counted as a half class missed.**
+**We meet for 65 minutes. There is little room to “leave early.”
+Therefore, leaving a class early will be counted as a half class
+missed.**
 
-**We meet for 65 minutes. There is little room to “arrive late.” 
-Therefore, arriving late to a class will be counted as a half class missed.**
+**We meet for 65 minutes. There is little room to “arrive late.”
+Therefore, arriving late to a class will be counted as a half
+class missed.**
 
 ## Accessing the Class Text
 
@@ -102,7 +106,6 @@ prior authorization.
 | [link](https://www.youtube.com/watch?v=oSEGPDGQVe0&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=5) | The for loop. |
 | [link](https://www.youtube.com/watch?v=fl8Ivy9or_o&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=4) | The while loop plus rand() and srand(). |
 
-
 ## Installing Your Environment
 
 Note: There is no complete agreement among the CS Professors about
@@ -130,15 +133,15 @@ it leads.
 | 4 | [Here](https://www.youtube.com/watch?v=u4CQYyTWGYA&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=4) | |
 | 5 | [Here](https://www.youtube.com/watch?v=13GEtlnAMLU&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=5) | |
 | 6 | [Here](https://www.youtube.com/watch?v=dYQLs5gbUiE&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=6) | [NOTE](./README.md#installing-vs-code-on-mac) |
-| 7 | [Here](https://www.youtube.com/watch?v=B43qo52RZmg&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=7) | [NOTE](./README.md#installing-brew-on-mac)
-| 8 | [Here](https://www.youtube.com/watch?v=EqkyGBz9av4&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=8) |
-| 9 | [Here]() |
+| 7 | [See Below](./README.md#installing-brew-on-mac) | |
+| 8 | [Here](https://www.youtube.com/watch?v=EqkyGBz9av4&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=8) | |
+| 9 | Install the `codelldb` extension | |
 
 ---
 
 #### Installing VS Code on Mac
 
-Since this video was recorded, more choiced for the Mac are 
+Since this video was recorded, more choices for the Mac are
 presented. If you have an "Apple Silicon", choose that (these
 are the newest Macs). If you have an Intel Mac, choose that
 (these are the older Macs). If you are not sure, don't click
@@ -149,24 +152,27 @@ Universal - instead click the Apple menu then click
 
 #### Installing BREW on Mac
 
-Since this video was recorded, installing BREW has changed.
+Copy this text and paste it into a terminal:
 
-Instead of triple clicking the text as instructed, there should
-be a clipboard icon to the right of the text. You can click this
-to copy the text to your clipboard for pasting into your terminal.
+```text
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-The install now asks for your password. This is fine.
+The install asks for your password. This is fine.
 
-The install now pauses to ask if you're sure. This is fine.
+The install pauses to ask if you're sure. This is fine.
 
-Like in the video, now you wait.
+Now you wait.
 
-The install no longer puts BREW in the path of programs you can
-easily execute. Instead, follow the first instruction in "Next
-Steps", namely copy and pasting the two shell commands into your
-terminal. Now, BREW should be installed.
+When complete, copy the next two lines then paste into your terminal:
+
+```text
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/perrykivolowitz/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 ---
+
 ### Installing the Environment on Windows
 
 I have authored a single video covering the entire process. It
