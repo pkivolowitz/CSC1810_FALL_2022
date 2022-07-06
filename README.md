@@ -138,7 +138,7 @@ Since this video was recorded, more choices for the Mac are
 presented. If you have an "Apple Silicon", choose that (these
 are the newest Macs). If you have an Intel Mac, choose that
 (these are the older Macs). If you are not sure, don't click
-Universal - instead click the Apple menu then click 
+Universal - instead click the Apple menu then click
 "About This Mac" and read the overview.
 
 ---
@@ -180,7 +180,8 @@ brew install wget
 I have authored a single video covering the entire process. It
 is found [here](https://youtu.be/VLr2PwyxVSM). I have added an
 index of the video in its description. Click "Show More" to
-reveal the index.
+reveal the index allowing you to skip to what you need (after you
+have seen the entire video).
 
 ### For Both Windows and Mac
 
@@ -218,11 +219,23 @@ specifically for this class.
 
 Please find it [here](https://markm208.github.io/cppbook/).
 
+## Basic Types
+
+For your convenience:
+
+* The integer types are described [here](./integers.md)
+
+* The floating point types are described [here](./floating_point.md)
+
+## Info for CS Cool Kids
+
+* Various symbols are named [here](./symbols.md)
+
 ## Topics Covered
 
 | Day | Content |
 | --- | ------- |
-| 9/7 | Syllabus and Install |
+| 9/7 | Syllabus and Install + Demos To Pass the Time |
 | 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, <br> signed integer types, assignment, `if`, `goto`, labels |
 | 9/12 | Review, `while`, first look at debugging, floating point types |
 | 9/14 | Review, P1 Assigned |
