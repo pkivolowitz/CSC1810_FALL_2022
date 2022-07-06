@@ -198,3 +198,17 @@ StoryTeller to explain code. He has developed a course
 specifically for this class.
 
 Please find it [here](https://markm208.github.io/cppbook/).
+
+## Topics Covered
+
+| Day | Content |
+| --- | ------- |
+| 9/7 | Syllabus and Install |
+| 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, <br> signed integer types, assignment, `if`, `goto`, labels |
+| 9/12 | Review, `while`, first look at debugging, floating point types |
+| 9/14 | Review, P1 Assigned |
+| 9/16 | |
+| 9/19 | |
+| 9/21 | Review, P1 Due, P2 Assigned|
+| 9/23 | |
+
