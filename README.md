@@ -98,14 +98,6 @@ Projects permit one grace day without penalty. After one day
 of lateness, work will not be accepted without
 prior authorization.
 
-## Links To Selected Videos
-
-| Link | Content |
-| ---- | ------- |
-| [link](https://www.youtube.com/watch?v=9WcOS1oVoAg&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=3) | The if statement. |
-| [link](https://www.youtube.com/watch?v=oSEGPDGQVe0&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=5) | The for loop. |
-| [link](https://www.youtube.com/watch?v=fl8Ivy9or_o&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=4) | The while loop plus rand() and srand(). |
-
 ## Installing Your Environment
 
 Note: There is no complete agreement among the CS Professors about
@@ -133,9 +125,10 @@ it leads.
 | 4 | [Here](https://www.youtube.com/watch?v=u4CQYyTWGYA&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=4) | |
 | 5 | [Here](https://www.youtube.com/watch?v=13GEtlnAMLU&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=5) | |
 | 6 | [Here](https://www.youtube.com/watch?v=dYQLs5gbUiE&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=6) | [NOTE](./README.md#installing-vs-code-on-mac) |
-| 7 | [See Below](./README.md#installing-brew-on-mac) | |
-| 8 | [Here](https://www.youtube.com/watch?v=EqkyGBz9av4&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=8) | |
-| 9 | Install the `codelldb` extension | |
+| 7 | See "Installing BREW on Mac" below | |
+| 8 | See "Installing wget on Mac" below | |
+| 9 | See "Getting the Project Creator" below | |
+| 10 | Install the `codelldb` extension | |
 
 ---
 
@@ -150,7 +143,7 @@ Universal - instead click the Apple menu then click
 
 ---
 
-#### Installing BREW on Mac
+#### *Installing BREW on Mac*
 
 Copy this text and paste it into a terminal:
 
@@ -173,6 +166,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ---
 
+#### *Installing wget on Mac*
+
+Copy this text and paste it into a terminal **after** you have 
+installed BREW.
+
+```text
+brew install wget
+```
+
 ### Installing the Environment on Windows
 
 I have authored a single video covering the entire process. It
@@ -187,9 +189,20 @@ reveal the index.
 On the Mac, you will first had to install `wget` using BREW. This
 is described above.
 
+On Windows, this is done in WSL. The
+[video](https://youtu.be/VLr2PwyxVSM) explains doing this.
+
 ```text
 wget https://www.mediafire.com/file/eew2hitafpf3pnl/create_project.command
 ```
+
+## Links To Selected Videos
+
+| Link | Content |
+| ---- | ------- |
+| [link](https://www.youtube.com/watch?v=9WcOS1oVoAg&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=3) | The if statement. |
+| [link](https://www.youtube.com/watch?v=oSEGPDGQVe0&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=5) | The for loop. |
+| [link](https://www.youtube.com/watch?v=fl8Ivy9or_o&list=PLnE1d1TMuFwOjEaP47aKu5n7p2Gs5HJaq&index=4) | The while loop plus rand() and srand(). |
 
 ## Recordings from Prior Year's Classes
 
