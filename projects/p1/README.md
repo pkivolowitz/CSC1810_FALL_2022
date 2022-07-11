@@ -2,8 +2,32 @@
 
 ## Goal
 
-Starting with the code we have already written which converts a number
-of degrees F into the equivalent degrees in C, you are going to:
+Starting with the code supplied here:
+
+```c++
+#include <iostream>                                                     // 1 
+                                                                        // 2 
+using namespace std;                                                    // 3 
+                                                                        // 4 
+int F2C(int degrees) { return 5 * (degrees - 32) / 9; }                 // 5 
+                                                                        // 6 
+int main() {                                                            // 7 
+  int degrees = 0;                                                      // 8 
+  int celsius;                                                          // 9 
+                                                                        // 10 
+  while (degrees >= 0) {                                                // 11 
+    cout << "Enter degrees (negative quits): ";                         // 12 
+    cin >> degrees;                                                     // 13 
+    if (degrees < 0)                                                    // 14 
+      break;                                                            // 15 
+    celsius = F2C(degrees);                                             // 16 
+    cout << degrees << " in degrees is " << celsius << " in celsius" << endl; // 17 
+  }                                                                     // 18 
+  return 0;                                                             // 19 
+}                                                                       // 20 
+```
+
+you are going to:
 
 * design an algorithm which allows the user to select the direction of
 the conversion (F to C or C to F).
@@ -14,71 +38,57 @@ the conversion (F to C or C to F).
 
 ## Review
 
-Below is the code we wrote in class. Let's review it.
-
-We learned that functions are bundles of potentially reusable code that
+Functions are bundles of potentially reusable code that
 perform some block of statements that make logical sense to group
 together.
 
-Functions that we've seen so far can be likened to verbs - do
-*something*. In the case of our in-class version of the temperature
-conversion program, we defined a function called `F2C()` which accepted
-an integer argument (or parameter) that allowed us to reuse the function
+Functions can often be likened to verbs - do
+*something*. In the case of our supplied version of the temperature
+conversion program, we define a function called `F2C()` found on
+`line 5` which accepts
+an integer argument (or parameter) and allows us to reuse the function
 with any value of degrees.
 
-We learned that functions can return values. `F2C()`, given a degrees F,
-will return the degrees in C. We talked about but did not work with
-functions that don't return values (their return type is `void`).
+Functions can return values. The type of the function defines the
+type of its return value. `F2C()`, as given on `line 5` is marked
+as returning an `int`. In particular, `F2C()` is fed an integer
+(called `degrees`) which indicates a temperature in Fahrenheit. The
+function computes and returns the equivalent temperature in the
+Celsius scale.
 
-We learned that functions are a **good idea**. They break down our
+Note that some functions do *not* return
+values. These functions are given the type `void`.
+
+Functions are a **good idea**. They break down our
 designs into smaller ideas which are more understandable.
 
-We learned that all C++ programs (that we will be writing) must include
-a function called `main()`. This function is special only in that it is
-where your program will begin executing.
+All C++ programs (that we will be writing) must include
+a function called `main()`. This function is special only due to its
+name. It is
+where your program will begin execution.
 
 We know that we can print out something to the user using `cout` and
-read in something from the user using `cin`. We talked about `cout` and
-`cin` being `streams` but we don't know what those are. For now we know
+read in something from the user using `cin`. For now, we know
 that `cout` is your screen and `cin` is your keyboard. There is a lot
-more to learn about streams.
+more to learn about "streams" such as `cin` and `cout` in the future.
 
-We learned about the `while` loop: *While a certain condition evaluates
-to true* repeat a block of code*.
-
-After the block of code executes, control transfers back up top where
+`Line 12` contains a `while` loop: *While a certain condition evaluates
+to true* repeat a block of code*. After the block of code executes,
+control transfers back up top where
 the condition is evaluated again. If the condition is now false, control
 transfers to after the end of the block nested under the `while`.
 
-We learned that one way of escaping a `while` loop early (i.e. from
+`while` loops are described in chapter 4.2. and 4.3.
+
+One way of escaping a `while` loop early (i.e. from
 within the middle of the block of code), is using a `break` statement.
-We learned that `break` statements can exist only inside loops and in
-one other place, but we didn't talk about the other place.
 
-Here's the code:
+`break` and its cousin `continue` are described in chapter 4.9.
 
-```c++
-#include <iostream>
-
-using namespace std;
-
-int F2C(int degrees) { return 5 * (degrees - 32) / 9; }
-
-int main() {
-  int degrees = 0;
-  int celsius;
-
-  while (degrees >= 0) {
-    cout << "Enter degrees (negative quits): ";
-    cin >> degrees;
-    if (degrees < 0)
-      break;
-    celsius = F2C(degrees);
-    cout << degrees << " in degrees is " << celsius << " in celsius" << endl;
-  }
-  return 0;
-}
-```
+`break` statements can exist only inside loops and in
+one other place, but we haven't learned about the other place yet
+(hint: it's called a `switch` statement and is described in chapter
+3.11).
 
 We learned about flowcharting. We learned that flowcharts help us design
 algorithms by putting pictures and symbols to the sequence of steps the
@@ -93,26 +103,26 @@ you see `f` in the flowchart, think `degrees`.
 Here is a slightly cleaner way of writing the same code:
 
 ```c++
-#include <iostream>
-
-using namespace std;
-
-int F2C(int degrees) { return 5 * (degrees - 32) / 9; }
-
-int main() {
-  int degrees;
-  int celsius;
-
-  while (true) {
-    cout << "Enter degrees (negative quits): ";
-    cin >> degrees;
-    if (degrees < 0)
-      break;
-    celsius = F2C(degrees);
-    cout << degrees << " in degrees is " << celsius << " in celsius" << endl;
-  }
-  return 0;
-}
+#include <iostream>                                                     // 1 
+                                                                        // 2 
+using namespace std;                                                    // 3 
+                                                                        // 4 
+int F2C(int degrees) { return 5 * (degrees - 32) / 9; }                 // 5 
+                                                                        // 6 
+int main() {                                                            // 7 
+    int degrees;                                                        // 8 
+    int celsius;                                                        // 9 
+                                                                        // 10 
+    while (true) {                                                      // 11 
+        cout << "Enter degrees (negative quits): ";                     // 12 
+        cin >> degrees;                                                 // 13 
+        if (degrees < 0)                                                // 14 
+            break;                                                      // 15 
+        celsius = F2C(degrees);                                         // 16 
+        cout << degrees << " in degrees is " << celsius << " in celsius" << endl; // 17 
+    }                                                                   // 18 
+    return 0;                                                           // 19 
+}                                                                       // 20 
 ```
 
 Why is this cleaner? Look:
@@ -120,9 +130,14 @@ Why is this cleaner? Look:
 ![flowchart](./p2_second_version.png)
 
 The key idea that made the second version cleaner is the construction
-`while (true)` which always passes. Execution falls directly into the
-user's entrance of the value for degrees which, if negative leads to
-exiting the loop using the ```break``` statement.
+`while (true)` on `line 11` which always evaluates to `true`.
+Execution falls directly into the
+user's entrance of the value for degrees. Notice the arrow leading
+in from the top proceeding directly to "print prompt...". This is
+the `while (true)`.
+
+If the value that is input it negative (`line 14`) the loop
+exits using `break` (`line 15`).
 
 ## if statements
 
@@ -135,12 +150,9 @@ said *while a certain condition evaluates to true* enter the block of
 code. The implicit `if` is that you enter the block of code only `if`
 the condition evaluates to true.
 
-The program you will write is more flexible than the one we wrote in
-class. This one asks the user which direction they want to perform
+The program you will write is more flexible than the given to you.
+This project's code asks the user which direction they want to perform
 a temperature conversion.
-
-Digression: did you know there is a
-difference between heat and temperature?
 
 After you prompt the user, they
 choose between converting from F to C or from C to F. They can also
@@ -176,14 +188,11 @@ beginning of class on the due date.
 You are to write the corresponding program. Your code and flowchart
 should match.
 
-## Partner rules
-
-*To be defined by the instructor.*
-
 ## What to turn in and how
 
-Use schoology to turn in only your one cpp source code file. Hand in
-your flowchart on paper in class. Include your name (in / on both).
+Use schoology to turn in only your one cpp source code file. Take
+a picture of your drawn flowchart and turn that in as well as a
+JPEG file.
 
 ## Work Rules
 
