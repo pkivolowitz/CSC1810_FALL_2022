@@ -1,6 +1,6 @@
 # Times Table with Nested Loop
 
-This exercise introduces nested loops and `iomanip`.
+This exercise introduces nested (for) loops and `iomanip` skills.
 
 ## iomanip
 
