@@ -1,241 +1,193 @@
-# File based Mad Libs
+# Walkies!
 
-In this program you will use:
+This project makes use of:
 
-* files to read data using `ifstream` (zybooks 9.1, for example)
-* vectors to hold a number of strings (zybooks 5.2)
-* `substr()` (zybooks 5.12)
+* `vector`
+* precise types like `int32_t`
+* `const` where appropriate
+* `iomanip`
+* additional features of `cout`
+* platform independent delays
 
-## Three vectors
+Your program will animate a single character back and forth across
+the terminal in such a way that it appears to walk. OK, tumble across
+the screen might be more correct but then titling this page
+*Tumbling* wouldn't have the same ring.
 
-Declare three vectors of `string` as *global variables*. A global variable is a variable declared outside any function. The vectors will hold, respectively, verbs, subjects and adverbs.
+![walkies](./walkies.gif)
 
-## The data file
+## Overview
 
-You will read a data file to populate vectors holding verbs, subjects and adverbs.
+You will declare a `vector` and put characters into the vector in 
+the following order:
 
-For example:
+| Order | Character | Comment |
+| ----- | --------- | ------- |
+| 0 | \| | below delete key - this is called the pipe character |
+| 1 | / | slash |
+| 2 | _ | underscore |
+| 3 | \\ | bash |
 
-```text
-sBob
-sMary
-sShe
-sHe
-sVoldemort
-sGort
-veats
-vdrinks
-vthinks
-vsnores
-vgroans
-vwalks
-vlikes
-vyells
-vbreaks
-vbuilds
-vbuys
-vcoaches
-vcolors
-vcoughs
-vcreates
-vcompletes
-vcries
-vdances
-vdescribes
-vdraws
-venters
-vexits
-vimitates
-aloudly
-aquickly
-anoisily
-aslowly
-aquietly
-aannoyingly
-adoubtfully
-adreamily
-aeasily
-aelegantly
-aenergetically
-aenormously
-aenthusiastically
-aequally
-aespecially
-aevenly
-aeventually
-aexactly
-aexcitedly
-afairly
-afaithfully
-afamously
-```
+Notice how the characters can be repeated to approximate a tumbling
+animation.
 
-The above list is located [here](./data.txt).
+You will loop these characters in such a way that they will be drawn
+marching first to the right across the screen and then back to the
+left as in the animation above.
 
-Notice each line begins with an:
+The width of the tumbling range will be 60 (the animation above
+shows a width of 40 but you are to use 60).
 
-* 's' for subjects
-* 'v' for verbs
-* 'a' for adverbs
+The program runs forever... terminate it with ^c (control-c) or
+the "stop" button in your IDE (if you launched it from there).
 
-As you read each line (using `getline()`), test the first character to determine to which vector the remainder of the string should be appended.
+## Use `iomanip` To Do Spacing
 
-## Opening a file
+The expanding and contracting space to the left of the character
+drawn must be created using `iomanip`. You know how to set the
+width of a field and how to right justify.
 
-To read from a file, it must be opened. File operations use *streams* just like `cin` and `cout`.
+## Use of Carriage Return To Cause Redrawing
 
-Include `fstream` to get access to file streams.
+After emitting a full line of characters, your cursor must be forced
+back to column 0. You can accomplish this by emitting `\r` as the
+last thing you print. This is the carriage return... think getting
+to the end of a line on an old time typewriter.
 
-Input file streams can be accessed using variables of type `ifstream`.
+![Kermit](./ktpng.gif)
 
-An `ifstream` can be opened in one of two ways:
+Kermit must be writing in assembly language because all the lines
+he's typing are very short.
 
-```c++
-ifstream fin("nameoffile");
-```
+## Do You Need Any Spaces To The Right Of The Character?
 
-or on two lines like:
+Asking for a friend.
 
-```c++
-ifstream fin;
-fin.open("nameoffile");
-```
+## Use of Precise Integer Types Required
 
-## Ensuring a file stream is open
+I have previous discussed a generally optional practice of being
+very explicit and precise in using integer types. I spoke about
+`int` potentially having different meanings on different platforms.
+On the other hand, precise types always mean what you wrote.
 
-Stuff happens. Your stream might not actually open. Maybe the file is missing, for example.
+Most c++ compilers will arrange for precise integer type names to be
+available to you - they aren't built into the language but come to us
+from an include file.
 
-Remember this: **NEVER ASSUME A FILE OPEN SUCCEEDED - ALWAYS CHECK**
+If for some reason you get errors from the precise type, then
+add `#include <cinttypes>` to your includes.
 
-Example:
+Recall the common precise integer types are:
+
+| type | meaning | without cinttypes |
+| ---- | ------- | ----------------- |
+| uint8_t | unsigned 8 bit integer | unsigned char |
+| uint16_t | unsigned 16 bit integer | unsigned short |
+| uint32_t | unsigned 32 bit integer | unsigned int |
+| uint64_t | unsigned 64 bit integer | unsigned long |
+| int8_t | signed 8 bit integer* | char |
+| int16_t | signed 16 bit integer | short |
+| int32_t | signed 32 bit integer | int |
+| int64_t | signed 64 bit integer | long |
+
+\* maybe - the language standard doesn't precisely define the
+meaning of `char`.
+
+**In this project, you are required to use the precise integer
+types.**
+
+## Forcing Output Without New Lines
+
+You're used to this:
 
 ```c++
-ifstream fin("nameoffile");
-if (fin.is_open()) {
-	// all is well
-	// do stuff
-	// then close the file when done
-	fin.close();
-} else {
-	// ERROR!
-	// do something.
-}
+cout << "Foo" << endl;
 ```
 
-## Closing a stream
+The `endl` is doing two things for you:
 
-Use `close()` on the stream variable. See above for example.
+1. Of course, it's giving you a new line but it is also...
+2. Triggers the output to actually render on your console
 
-## Reading a line at a time
+Console output is buffered for efficiency. 
 
-Use `getline()` to read a whole line at a time. `getline()` returns a boolean value of `true` if all goes well. So the following is common:
+Actual output only happens when new lines are emitted. In this program, we're not using new lines at all. Instead, after text is output, we'll emit only a carriage return ('\r').
+
+To force output that's been buffered up in an output stream,
+(without requiring a new line), do:
 
 ```c++
-while (getline(cin, s)) {
-	// Read a line into string variable s from cin.
-}
-// There is no more to read.
+cout.flush();
 ```
 
-or with an `ifstream` like in this project:
+Note that `cout` can be replaced with the name of any output stream.
+
+The `.flush()` method forces any data buffered inside the stream to
+render out to where ever the stream is connected.
+
+## Causing A Delay
+
+Since C++ 11, the standard library has provided a portable means of
+delaying execution of your program, a *pause* in other words. To use
+this method you need the following includes:
 
 ```c++
-while (getline(fin, s)) {
-	// Read a line into string variable s from cin.
-}
-// There is no more to read.
-fin.close();
+#include <chrono>
+#include <thread>
 ```
 
-## Getting the tail of a string
-
-The first letter of each line in the data file tells you which of the three vectors to add the rest of the string to. Use `substr()` to get access to the characters beyond a certain position.
-
-`substr()` is found in zybooks 5.12. Note that you are allowed to leave off the second parameter to `substr()` which means "take the rest of the string."
-
-Example:
+When it is time to delay, use the following:
 
 ```c++
-string s("xJones");
-cout << s.at(0) << " " << s.substr(1) << endl;
+this_thread::sleep_for(chrono::milliseconds(MILLISECONDS_DELAY));
 ```
 
-will print:
+You declare and define `MILLISECONDS_DELAY`. To receive full credit,
+this variable must be declared `const`.
 
-```text
-x Jones
-```
+## Use of `const`
 
-## Appending something to a `vector`
+In this project:
 
-Use `push_back()` as described in zybooks 5.7.
+* you may not have any "magic numbers"
+* any values which do not change must be declared as `const`
 
-Example:
+For example, you must declare a number of milliseconds that your program
+will delay in between outputs.
+
+You may NOT do this:
 
 ```c++
-vector<int> numbers;
-numbers.push_back(18);
+this_thread::sleep_for(chrono::milliseconds(100));
 ```
 
-## Getting the size of a `vector`
-
-Use `size()` just like with strings. `string` is kind of like a
-`vector<char>`.
-
-The size of the vector is vital in choosing an entry within the vector
-at random.
-
-Note that `size()` returns a `size_t` which is an `unsigned`. This can
-be a problem when mixing signed and unsigned values.
-
-## Choosing a member of a `vector` at random
-
-Use `rand()` along with the `%` operator to choose an integer at
-random which runs from 0 to the length of the vector minus 1.
-
-## Remember to use `srand()` just once
-
-As in:
+The value "100" is a magic number. It dropped in from who knows where
+and we have no idea what it means! Instead you must:
 
 ```c++
-#include <ctime>
+const int32_t MILLISECONDS_DELAY = 100;
 ```
 
-and
+in some appropriate place in your code and then the following
+contains no magic numbers. I KNOW what the parameter means.
 
 ```c++
-srand((unsigned int) time(nullptr));
+this_thread::sleep_for(chrono::milliseconds(MILLISECONDS_DELAY));
 ```
 
-## Placing the data file
+### What's a Millisecond?
 
-Put the data file in the directory that holds your source code.
+One thousandth of a second is a millisecond. The prefix "milli" means
+one thousandth of something coming from the Latin "mille".
 
-## Example output
+Five hundred milliseconds is half a second, for example.
 
-```text
-She eats noisily.
-```
+## Barbara Woodhouse
 
-## Remember to ensure the file successfully opened
+[Barbara Woodhouse](https://en.wikipedia.org/wiki/Barbara_Woodhouse)
+was a pre-Internet phenom who was a world renowned dog trainer. From
+her "Walkies" and "Sit tah" entered the world's lexicon.
 
-Remember to use `is_open()`. I will specifically look for this in your
-code.
+Here she is:
 
-## Remember to close the file only if opened
-
-Remember that closing the file is important and only works if the
-file is truly open. I will look for this specifically.
-
-## Remember to print an error if the file cannot be opened
-
-Include the name of the file that failed to open. I will look for this
-specifically.
-
-## What to turn in
-
-Just the cpp file.
-
-## Work Rules
-
-This work is done solo.
+![Barbara](./bwoodhouse.png)
