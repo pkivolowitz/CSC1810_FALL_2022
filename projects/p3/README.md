@@ -185,8 +185,8 @@ Five hundred milliseconds is half a second, for example.
 ## Barbara Woodhouse
 
 [Barbara Woodhouse](https://en.wikipedia.org/wiki/Barbara_Woodhouse)
-was a pre-Internet phenom who was a world renowned dog trainer. From
-her "Walkies" and "Sit tah" entered the world's lexicon.
+was a pre-Internet phenom world renowned dog trainer. From
+her, "Walkies" and "Sit tah" entered the world's lexicon.
 
 Here she is:
 
