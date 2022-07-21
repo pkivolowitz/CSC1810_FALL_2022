@@ -185,10 +185,12 @@ You will use some combinations of `if`, `else if` and
 
 You are to turn in a flowchart showing the structure of your program.
 Remember that diamonds are used for `if` statements. Also remember to
-label the outputs of the diamonds. Turn this in on paper at the
-beginning of class on the due date.
+label the outputs of the diamonds. Turn this in as a photograph uploaded
+to Schoology as part of what you turn in.
 
-You are to write the corresponding program. Your code and flowchart
+You are to write the corresponding program. 
+
+Your code and flowchart
 should match.
 
 ## What to turn in and how
