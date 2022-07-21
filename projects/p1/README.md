@@ -139,6 +139,9 @@ the `while (true)`.
 If the value that is input it negative (`line 14`) the loop
 exits using `break` (`line 15`).
 
+Notice this flowchart does not contain an initialization of `f` (`degrees`).
+This is because it is no longer necessary. Can you see why?
+
 ## if statements
 
 We have learned about `if` statements in class. Let's make use of them
