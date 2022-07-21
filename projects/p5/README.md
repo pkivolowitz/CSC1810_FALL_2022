@@ -251,10 +251,6 @@ References for new things used:
 | `string.npos` | zybooks 5.12 |
 | `ifstream` | zybooks 9.5 (beginning) |
 
-So that you may test with a larger body of text, a file is supplied
-containing what your program will think is your user input. This
-slight-of-hand will be accomplished using command line *redirection*.
-
 ## Building the string of asterisks
 
 When you `find()` instances of the target phrase, you must replace them
