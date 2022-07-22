@@ -1,4 +1,4 @@
-# Walkies!
+# P3 - Walkies!
 
 This project makes use of:
 
