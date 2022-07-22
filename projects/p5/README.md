@@ -1,5 +1,23 @@
 # Redactor-Matic
 
+## Helpful Pointers to the Zybook
+
+You should read and do these chapters. Use them as a resource.
+
+| Concept | Chapter |
+| ------- | ------- |
+| argv / argc | 15.5 |
+| cerr | not in book |
+| errno / perror | not in book |
+| ifstream | 9.1, 9.5 beginning |
+| string.c_str | not in book |
+| string.find | 5.12 |
+| string.length | 5.11, 5.12 |
+| string.npos | 5.12 |
+| string.push_back | 5.12 |
+| string.replace | 5.12 |
+| terminal | kinda 15.5 |
+
 ## About This Specification
 
 To encourage you to really read this specification closely, various

@@ -6,6 +6,23 @@ In this program you will use:
 * vectors to hold a number of strings (zybooks 5.2)
 * `substr()` (zybooks 5.12)
 
+## Requirements Embedded in Text
+
+To encourage you to read and understand this specification, certain
+*requirements* are embedded in the text without being called out as
+such. Failure to fulfill these requirements will drop your grade.
+
+## Helpful Pointers to the Zybook
+
+You should read and do these chapters. Use them as a resource.
+
+| Concept | Chapter |
+| ------- | ------- |
+| getline | 2.14 |
+| ifstream | 9.1 |
+| srand / rand | 2.18 |
+| string.substr | 5.12 |
+
 ## Three vectors
 
 Declare three vectors of `string` as *global variables*. A global variable is a variable declared outside any function. The vectors will hold, respectively, verbs, subjects and adverbs.

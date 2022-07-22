@@ -1,5 +1,23 @@
 # Project - More sophisticated logical selection
 
+## Requirements Embedded in Text
+
+To encourage you to read and understand this specification, certain
+*requirements* are embedded in the text without being called out as
+such. Failure to fulfill these requirements will drop your grade.
+
+## Helpful Pointers to the Zybook
+
+You should read and do these chapters. Use them as a resource.
+
+| Concept | Chapter |
+| ------- | ------- |
+| cout, cin | 9.1 |
+| if statement | 3.1 |
+| iostream | 9.1 |
+| namespace | 7.15 but not at all clear - refer to class |
+| while loop | 4.2 |
+
 ## Goal
 
 Starting with the code supplied here:
@@ -188,10 +206,9 @@ Remember that diamonds are used for `if` statements. Also remember to
 label the outputs of the diamonds. Turn this in as a photograph uploaded
 to Schoology as part of what you turn in.
 
-You are to write the corresponding program. 
+You are to write the corresponding program.
 
-Your code and flowchart
-should match.
+Your code and flowchart must match.
 
 ## What to turn in and how
 

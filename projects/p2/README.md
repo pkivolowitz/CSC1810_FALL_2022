@@ -1,6 +1,24 @@
-# Times Table with Nested Loop
+# P2 - Times Table with Nested Loop
 
-This exercise introduces nested (for) loops and `iomanip` skills.
+This project introduces nested (for) loops and `iomanip` skills. It
+also requires use of `const`.
+
+## Requirements Embedded in Text
+
+To encourage you to read and understand this specification, certain
+*requirements* are embedded in the text without being called out as
+such. Failure to fulfill these requirements will drop your grade.
+
+## Helpful Pointers to the Zybook
+
+You should read and do these chapters. Use them as a resource.
+
+| Concept | Chapter |
+| ------- | ------- |
+| const | Refer to class |
+| for loop | 4.4, 4.5 |
+| iomanip | 9.2 |
+| nested loops | 4.7 |
 
 ## iomanip
 
@@ -63,7 +81,7 @@ produces:
 100  items
 ```
 
-Each number still fits in 4 columns but is now left justified. 
+Each number still fits in 4 columns but is now left justified.
 
 Notice
 how `setw()` must be used set set the width of the *next* item to be

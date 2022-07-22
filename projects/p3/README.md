@@ -1,4 +1,4 @@
-# P3 - Walkies!
+# P3 - Walkies
 
 This project makes use of:
 
@@ -16,9 +16,25 @@ the screen might be more correct but then titling this page
 
 ![walkies](./walkies.gif)
 
+## Requirements Embedded in Text
+
+To encourage you to read and understand this specification, certain
+*requirements* are embedded in the text without being called out as
+such. Failure to fulfill these requirements will drop your grade.
+
+## Helpful Pointers to the Zybook
+
+You should read and do these chapters. Use them as a resource.
+
+| Concept | Chapter |
+| ------- | ------- |
+| vector | 5.2 |
+| delaying | not in book |
+| iomanip | 9.2 |
+
 ## Overview
 
-You will declare a `vector` and put characters into the vector in 
+You will declare a `vector` and put characters into the vector in
 the following order:
 
 | Order | Character | Comment |
@@ -109,7 +125,7 @@ The `endl` is doing two things for you:
 1. Of course, it's giving you a new line but it is also...
 2. Triggers the output to actually render on your console
 
-Console output is buffered for efficiency. 
+Console output is buffered for efficiency.
 
 Actual output only happens when new lines are emitted. In this program, we're not using new lines at all. Instead, after text is output, we'll emit only a carriage return ('\r').
 
