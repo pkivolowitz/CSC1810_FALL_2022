@@ -1,0 +1,2 @@
+{ // This is a balanced file that also is a first test of
+} // comment handling.

@@ -1,0 +1,6 @@
+{
+	{
+		()
+		[} 	// Here is an imbalanced. The } is not a ]
+	}
+}

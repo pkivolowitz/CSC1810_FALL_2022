@@ -1,0 +1,4 @@
+// This test the comment is first. The next test
+// is a / at the very end of a line.
+This is a test /
+	()

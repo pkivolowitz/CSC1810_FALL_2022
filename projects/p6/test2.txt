@@ -1,0 +1,6 @@
+{				// This is all balanced.
+	{			// Here is a second test of comments: )
+		()
+		[]
+	}
+}
