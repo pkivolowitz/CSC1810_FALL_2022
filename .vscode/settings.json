@@ -3,6 +3,7 @@
 		"codelldb"
 	],
 	"cSpell.ignoreWords": [
+		"CARTHAGECSC",
 		"Gort",
 		"aannoyingly",
 		"adoubtfully",
@@ -27,10 +28,12 @@
 		"aquietly",
 		"aslowly",
 		"bwoodhouse",
+		"crossindex",
 		"ktpng",
 		"milli",
 		"missingfile",
 		"nameoffile",
+		"shellenv",
 		"vbreaks",
 		"vbuilds",
 		"vbuys",

@@ -15,7 +15,7 @@ I am not a religious person. However, 1 Corinthians 13 has this to say:
 thought as a child; but when I became a man, I put away childish things.*
 
 A corollary: I generally help those who help themselves. The preceding
-once showed up in a teaching evaluation. 
+once showed up in a teaching evaluation.
 
 As. If. This. Was. A. Bad. Thing.
 
@@ -171,7 +171,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #### *Installing wget on Mac*
 
-Copy this text and paste it into a terminal **after** you have 
+Copy this text and paste it into a terminal **after** you have
 installed BREW.
 
 ```text
@@ -246,4 +246,3 @@ For your convenience:
 | 9/19 | | |
 | 9/21 | Review, P1 Due, P2 Assigned| 4.4, 4.5, 4.7, 9.2 |
 | 9/23 | | |
-
