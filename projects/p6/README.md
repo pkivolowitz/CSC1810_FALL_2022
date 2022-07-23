@@ -47,6 +47,9 @@ you'll remove the top of the `stack`. If you need the last member of the
 before calling `v.pop_back()` since `v.pop_back()` is a `void` method -
 it returns nothing.
 
+See chapter 5.7 in the book for information about `.back()` and
+`.pop_back()`.
+
 ## Pushing on to the `stack`
 
 After reading a line from the file, go through it character by
