@@ -98,6 +98,9 @@ Projects permit one grace day without penalty. After one day
 of lateness, work will not be accepted without
 prior authorization.
 
+[Here](./reading_crossindex.md) is a mapping showing which
+out-of-order chapters will be helpful doing each project.
+
 ## Installing Your Environment
 
 Note: There is no complete agreement among the CS Professors about
@@ -227,20 +230,20 @@ For your convenience:
 
 * The floating point types are described [here](./floating_point.md)
 
-## Info for CS Cool Kids
+## Info for Cool Kids
 
 * Various symbols are named [here](./symbols.md)
 
 ## Topics Covered
 
-| Day | Content |
-| --- | ------- |
-| 9/7 | Syllabus and Install + Demos To Pass the Time |
-| 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, <br> signed integer types, assignment, `if`, `goto`, labels |
-| 9/12 | Review, `while`, first look at debugging, floating point types |
-| 9/14 | Review, P1 Assigned |
-| 9/16 | |
-| 9/19 | |
-| 9/21 | Review, P1 Due, P2 Assigned|
-| 9/23 | |
+| Day | Content | Out-of-Order Chapters Needed<br/>For Projects |
+| --- | ------- | ---------------------------- |
+| 9/7 | Syllabus and Install + Demos To Pass the Time | |
+| 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, signed integer types, assignment, `if`, `goto`, labels | |
+| 9/12 | Review, `while`, first look at debugging, floating point types | |
+| 9/14 | Review, P1 Assigned | 3.1, 4.2, 7.15, 9.1 |
+| 9/16 | | |
+| 9/19 | | |
+| 9/21 | Review, P1 Due, P2 Assigned| 4.4, 4.5, 4.7, 9.2 |
+| 9/23 | | |
 
