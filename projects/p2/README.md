@@ -1,4 +1,4 @@
-# P2 - Times Table with Nested Loop
+# Project 2 - Times Table with Nested Loop
 
 This project introduces nested (for) loops and `iomanip` skills. It
 also requires use of `const`.
@@ -46,7 +46,7 @@ produces this:
 100 items
 ```
 
-Suppose you wanted to line things up a little nicer.
+Suppose you wanted to line things up a little more nicely.
 
 ```c++
 cout << setw(4) << 1 << " item" << endl;
@@ -100,6 +100,8 @@ outer most loop can be thought of as happened the slowest. Imagine
 an odometer in a car. The one's digit (or tenths on some cars) is the
 innermost, and cycles quickly compared to the digit to its left.
 
+![GIF](./odometer.gif)
+
 Example:
 
 ```c++
@@ -114,7 +116,7 @@ The inner loop will run 100 times (10 x 10).
 
 ## Times table
 
-For this exercise, print a nicely formatted 10 x 10 times table:
+For this project, print a nicely formatted 10 x 10 times table:
 
 ```text
 hyde pk_times_table $> ./a.out
@@ -133,10 +135,11 @@ hyde pk_times_table $> ./a.out
 ```
 
 There will be *four* loops in this program.
-Use the first to print the horizontal heading. For the dividing
-line, you use a second loop.
+Use the first to print the horizontal heading. 
 
-Then, the final two loops are nested loop - the outer will be the rows,
+For the dividing horizontal line, you use your second loop.
+
+Then, the final two loops are nested loops - the outer will be the rows,
 the inner will be the columns.
 
 Use `setw()` with a cell width set to 4 using a `const int`. For the
@@ -171,6 +174,8 @@ Instead, it is better to write something like:
 for (int counter = MIN_VALUE; counter < MAX_VALUE; counter++)
 ```
 
+where `MIN_VALUE` and `MAX_VALUE` are defined above.
+
 Recall that `for` loops are described in chapters 4.4 and 4.5.
 
 ## Work Rules
@@ -184,4 +189,5 @@ Just your .cpp file via Schoology.
 ## `int` versus `int32_t`
 
 You can use either in the project but I hope you'll get in the habit
-of using the precise form of specifying integer types.
+of using the precise form of specifying integer types. In the future,
+use of the precise integer types will be required.

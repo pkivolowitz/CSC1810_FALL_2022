@@ -1,4 +1,4 @@
-# Project - More sophisticated logical selection
+# Project 1 - More Sophisticated Logical Selection
 
 ## Requirements Embedded in Text
 
@@ -90,8 +90,8 @@ read in something from the user using `cin`. For now, we know
 that `cout` is your screen and `cin` is your keyboard. There is a lot
 more to learn about "streams" such as `cin` and `cout` in the future.
 
-`Line 12` contains a `while` loop: *While a certain condition evaluates
-to true* repeat a block of code*. After the block of code executes,
+`Line 12` contains a `while` loop: *while a certain condition evaluates
+to true repeat a block of code*. After the block of code executes,
 control transfers back up top where
 the condition is evaluated again. If the condition is now false, control
 transfers to after the end of the block nested under the `while`.
@@ -157,8 +157,11 @@ the `while (true)`.
 If the value that is input it negative (`line 14`) the loop
 exits using `break` (`line 15`).
 
-Notice this flowchart does not contain an initialization of `f` (`degrees`).
-This is because it is no longer necessary. Can you see why?
+Notice this flowchart does not contain an initialization of `f`
+(`degrees`). This is because it is no longer necessary. Can you see why?
+
+A different way of "falling directly into a loop" is the `do-while`
+described in chapter 15.1.
 
 ## if statements
 
@@ -171,9 +174,10 @@ said *while a certain condition evaluates to true* enter the block of
 code. The implicit `if` is that you enter the block of code only `if`
 the condition evaluates to true.
 
-The program you will write is more flexible than the given to you.
+The program you will write is more flexible than the one given to you.
 This project's code asks the user which direction they want to perform
-a temperature conversion.
+the temperature conversion: from Fahrenheit to Celsius or from Celsius
+to Fahrenheit.
 
 After you prompt the user, they
 choose between converting from F to C or from C to F. They can also
@@ -204,7 +208,9 @@ You will use some combinations of `if`, `else if` and
 You are to turn in a flowchart showing the structure of your program.
 Remember that diamonds are used for `if` statements. Also remember to
 label the outputs of the diamonds. Turn this in as a photograph uploaded
-to Schoology as part of what you turn in.
+to Schoology as part of what you turn in. That is, you will have drawn
+the flowchart using a pencil and paper - photograph the paper and
+turn that in.
 
 You are to write the corresponding program.
 
@@ -212,7 +218,7 @@ Your code and flowchart must match.
 
 ## What to turn in and how
 
-Use schoology to turn in only your one cpp source code file. Take
+Use schoology to turn in only your one cpp source code file. Also, take
 a picture of your drawn flowchart and turn that in as well as a
 JPEG file.
 

@@ -14,10 +14,16 @@ I am not a religious person. However, 1 Corinthians 13 has this to say:
 *When I was a child, I spoke as a child, I understood as a child, I
 thought as a child; but when I became a man, I put away childish things.*
 
-A corollary: I generally help those who help themselves. The preceding
-once showed up in a teaching evaluation.
+The point being, success in college is a function of hard work and
+discipline. 
 
-As. If. This. Was. A. Bad. Thing.
+* Hard work, by you. No one else.
+
+* Discipline, by you. No one else.
+
+A corollary: I generally help those who help themselves. The preceding
+once showed up in a teaching evaluation. As. If. This. Was. A. Bad.
+Thing.
 
 ## Syllabus
 
@@ -38,7 +44,7 @@ From the [syllabus](./syllabus/CSC%201810%20Fa22%20Kivolowitz.pdf):
 
 **For every five classes missed, your final grade will be reduced by a
 full letter. Absences due to sports, music, or any other campus activity
-count as an unexcused absence. To be clear: A full letter grade means
+count as an unexcused absences. To be clear: A full letter grade means
 exactly that. For example, a B+ will be reduced to a C+.**
 
 ## Arriving Late / Leaving Early
@@ -74,11 +80,6 @@ You are encouraged to read ahead. Below are the chapters and
 subchapters we will cover. **However, we will frequently cover these
 out-of-order.**
 
-I am **NOT** jumping around to make things more
-confusing. Rather, the opposite is true.
-My ordering makes sense for teach. Their ordering makes sense for
-writing a book.
-
 | Chapter | Subchapters |
 | ------- | ----------- |
 | 1 | All |
@@ -90,6 +91,19 @@ writing a book.
 | 9 | Not 9.9 |
 | 15 | Only 1, 2, 3, 11 through 18 |
 
+### "Jumping Around" in the Book
+
+I am **NOT** jumping around to make things more
+confusing. Rather, the opposite is true. While we might have read
+whole chapters only up to chapter 2, for example, you will have readings
+from later chapters in support of your projects.
+
+See [here](./reading_crossindex.md) for which chapters will be helpful
+to you in which project.
+
+Again, my ordering makes sense for teaching. Their ordering makes
+sense for writing a book.
+
 ## Projects
 
 Project specifications can be found [here](./projects).
@@ -98,7 +112,7 @@ Projects permit one grace day without penalty. After one day
 of lateness, work will not be accepted without
 prior authorization.
 
-[Here](./reading_crossindex.md) is a mapping showing which
+Again, [this](./reading_crossindex.md) is a mapping showing which
 out-of-order chapters will be helpful doing each project.
 
 ## Installing Your Environment
@@ -107,7 +121,7 @@ Note: There is no complete agreement among the CS Professors about
 what constitutes the *right* environment. I use the most Linux-like
 environment I can reasonably manage. This means:
 
-* Visual Studio Code (so Mac, Windows and Linux are the same).
+* Visual Studio Code (**so Mac, Windows and Linux are the same**).
 
 * The terminal on Mac (almost identical to a Linux terminal).
 
