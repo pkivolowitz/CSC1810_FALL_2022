@@ -120,24 +120,31 @@ For this project, print a nicely formatted 10 x 10 times table:
 
 ```text
 hyde pk_times_table $> ./a.out
-     |  1   2   3   4   5   6   7   8   9  10
-  ---+---------------------------------------
-   1 |  1   2   3   4   5   6   7   8   9  10
-   2 |  2   4   6   8  10  12  14  16  18  20
-   3 |  3   6   9  12  15  18  21  24  27  30
-   4 |  4   8  12  16  20  24  28  32  36  40
-   5 |  5  10  15  20  25  30  35  40  45  50
-   6 |  6  12  18  24  30  36  42  48  54  60
-   7 |  7  14  21  28  35  42  49  56  63  70
-   8 |  8  16  24  32  40  48  56  64  72  80
-   9 |  9  18  27  36  45  54  63  72  81  90
-  10 | 10  20  30  40  50  60  70  80  90 100
-```
+    |   1   2   3   4   5   6   7   8   9  10
+----+----------------------------------------
+  1 |   1   2   3   4   5   6   7   8   9  10
+  2 |   2   4   6   8  10  12  14  16  18  20
+  3 |   3   6   9  12  15  18  21  24  27  30
+  4 |   4   8  12  16  20  24  28  32  36  40
+  5 |   5  10  15  20  25  30  35  40  45  50
+  6 |   6  12  18  24  30  36  42  48  54  60
+  7 |   7  14  21  28  35  42  49  56  63  70
+  8 |   8  16  24  32  40  48  56  64  72  80
+  9 |   9  18  27  36  45  54  63  72  81  90
+ 10 |  10  20  30  40  50  60  70  80  90 100
+ ```
 
-There will be *four* loops in this program.
-Use the first to print the horizontal heading. 
+There will be at most *four* loops in this program.
+Use the first to print the horizontal heading.
 
-For the dividing horizontal line, you use your second loop.
+For the dividing horizontal line, you *might* use your second loop. You
+can "season this to taste" - that is, once you've gotten the first line
+right you can code up the dividing line so that it "looks right" but
+remember to avoid *magic numbers*.
+
+You might also avoid the second loop
+using features of `iomanip` to easily print a **calculated** number of
+dashes.
 
 Then, the final two loops are nested loops - the outer will be the rows,
 the inner will be the columns.
@@ -159,6 +166,9 @@ as make your program easier to chance. If, for example, you wanted to
 have a cell spacing of 5 instead of 4, you'd simply change the one
 line where `CELL_WIDTH` is set rather than every line where `setw()`
 is used.
+
+Notice the first column (coming before the products and the "|" has
+one fewer characters... again, avoid magic numbers).
 
 Similarly, you might specify a `for` loop like so:
 
@@ -191,3 +201,10 @@ Just your .cpp file via Schoology.
 You can use either in the project but I hope you'll get in the habit
 of using the precise form of specifying integer types. In the future,
 use of the precise integer types will be required.
+
+## Setting Expectations
+
+Including some blank lines but no comments, my solution is less than 30
+lines. I include this NOT as a challenge but to set your expectations.
+Should you find yourself writing hundreds of lines, you should
+reconsider what you're doing.
