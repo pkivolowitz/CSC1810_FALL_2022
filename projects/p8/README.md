@@ -252,7 +252,7 @@ Calling ball number: 17 Value: N32 Found on: 0 boards
 Calling ball number: 18 Value: B10 Found on: 0 boards
 Calling ball number: 19 Value: I27 Found on: 0 boards
 Calling ball number: 20 Value: G60 Found on: 1 board
-Board: 0 has a winner 
+Board: 0 has a winner in a Row
 B9*   I23*  N44*  G60*  O75*  
 B13   I28   N34   G48   O62   
 B11   I21*  FREE  G56   O69   
