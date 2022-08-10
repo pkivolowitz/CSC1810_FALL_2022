@@ -1,13 +1,17 @@
 # Class / Struct Methods
 
-This is the first project this term upon which you may work as a team of
+Yay! You get to work with a partner again on this project!
+You may work as a team of
 at most two. At most one team member turns in code. Code files must have
 the names of all team members in them at the top of the file containing
 `main()`. Team members who are not submitting code must submit a **text
 file** containing the names of the team members. Failure to comply with
 this requirement (re: names) will result in point deductions.
 
-In this project you will write a program that simulates any number of
+One more word about partners: If your partner didn't work out on Project
+5, don't use them again.
+
+In this project you will write a program that simulates *any* number of
 bingo cards (where the number is at least one) being played at the same
 time.
 
@@ -77,7 +81,7 @@ Do not attempt to use the shuffle functions found in `algorithm`.
 
 All the class / struct specifications given below are required.
 
-None of these have constructors defined as constructors are left to
+None of these have constructors as constructors are left to
 CSC 1820. Instead, where needed, the objects have a method called
 `Initialize()` which must be called in order to properly set up the
 object.
@@ -328,6 +332,10 @@ at a time, testing and debugging as I went.
 You know what's wasted effort? Debugging for hours and hours to find
 something that could have been caught by a test.
 
+There are things called "Testing Frameworks" which help you write
+test code called "Unit Tests". Perhaps we'll go into more detail
+into one or more of them.
+
 ## Writing comments isn't wasted effort
 
 You know what's wasted effort? Debugging for hours and hours to find
@@ -336,12 +344,12 @@ you not to do what you just did.
 
 ## Professor K says
 
-![professor K sez](professor_k_sez.jpg)
-
-People who never comment are either lazy or know-it-alls. 
-
-**Curses and
-other dirty words removed from the previous sentence with PC terms inserted.**
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption style="width:60%;">
+  People who never comment are either lazy or know-it-alls.
+  </figcaption>
+</figure>
 
 Either way,
 if they worked for Professor K, they wouldn't work for Professor K
