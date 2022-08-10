@@ -47,9 +47,6 @@ you'll remove the top of the `stack`. If you need the last member of the
 before calling `v.pop_back()` since `v.pop_back()` is a `void` method -
 it returns nothing.
 
-See chapter 5.7 in the book for information about `.back()` and
-`.pop_back()`.
-
 ## Pushing on to the `stack`
 
 After reading a line from the file, go through it character by
@@ -89,7 +86,16 @@ You can check the value returned by your program using:
 echo $?
 ```
 
-from the terminal.
+from a Unix-like terminal - Linux and Mac for example. 
+
+From a Windows, it's a completely intuitive:
+
+```text
+echo %errorlevel%
+```
+
+In PowerShell there are no errors. It's just that powerful. Seriously,
+who uses PowerShell anyway?
 
 ## Count the lines
 
@@ -129,7 +135,7 @@ All samples could have been spread over multiple lines.
 * `{ happy happy ( joy joy ) }`
 
    Note that the words (anything other than a parenthesis, brace or
-   bracket actually) are ignored.
+   bracket) are ignored.
 
 ### Bad input
 
@@ -146,6 +152,8 @@ All samples could have been spread over multiple lines.
    There is a missing closure to the `{`.
 
 ## Command line arguments
+
+This topic is worth reviewing and amplifying.
 
 You may have seen this:
 
@@ -207,6 +215,13 @@ pointers. Hint: pointers are not scary.
 Things can end in tears (EOT) if you attempt to use an argument that
 isn't there. So, don't do that. Check `argc` to determine if any
 particular index into `argv` is valid or not.
+
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption style="width:60%">
+  Before accessing a thing, make sure the thing exists!
+  </figcaption>
+</figure>
 
 ## Suggestions
 
@@ -274,18 +289,6 @@ All work is to be done solo.
 
 Only `.cpp` files.
 
-## One point of extra credit
-
-In one of the preformatted text blocks, i.e.:
-
-```text
-these
-```
-
-there is an error. You will get one point of extra credit (a symbolic
-pat on the back for reading the spec) if you find it. If you do, 
-describe the error in a comment inside your source code.
-
 ## Setting expectations
 
 This is not a competition... my solution was 110 lines including
@@ -295,8 +298,10 @@ If, for example, you find yourself writing 300 lines, you're doing it
 
 ## Incremental development
 
-![That](./professor_k_sez.jpg)
-
-Professor K says, "You should write test data that tests just the piece
-of code you're
-working on right now."
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption style="width:60%">
+  You should write test data and test
+  code that tests just the piece of code you're working on right now.
+  </figcaption>
+</figure>
