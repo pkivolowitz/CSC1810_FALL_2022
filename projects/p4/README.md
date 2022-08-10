@@ -97,11 +97,11 @@ But... ![danger](./will_robinson.jpeg).
 What would happen if there was no "first character" as in an empty
 string?
 
-<div style="margin: auto; width: 60%">
-<em>Professor K Sez:</em>
-<img src="professor_k_sez.jpg">
-<em>Before accessing a thing, make sure the thing exists!</em>
-</div>
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption>Before accessing a thing, make sure the
+  thing exists</figcaption>
+</figure>
 
 ## Opening a file
 
@@ -130,11 +130,10 @@ fin.open("nameoffile");
 Stuff happens. Your stream might not actually open. Maybe the file is
 missing, for example.
 
-<div style="margin: auto; width: 60%">
-<em>Professor K Sez:</em>
-<img src="professor_k_sez.jpg">
-<em>NEVER ASSUME A FILE OPEN SUCCEEDED - ALWAYS CHECK!</em>
-</div>
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption>NEVER ASSUME A FILE OPEN SUCCEEDED!</figcaption>
+</figure>
 
 The above is a corollary of the previous "Professor K Sez": before
 accessing (i.e. using) a file, make sure it exists (i.e. it's open).

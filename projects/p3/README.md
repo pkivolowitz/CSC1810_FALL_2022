@@ -1,4 +1,4 @@
-# P3 - Walkies
+# Walkies!
 
 This project makes use of:
 
@@ -9,33 +9,17 @@ This project makes use of:
 * additional features of `cout`
 * platform independent delays
 
-Your program will animate a single character back and forth across
-the terminal in such a way that it appears to walk. OK, tumble across
-the screen might be more correct but then titling this page
-*Tumbling* wouldn't have the same ring.
+Your program will animate a single character back and forth across the
+terminal in such a way that it appears to walk. OK, tumble across the
+screen might be more correct but then titling this page *Tumbling*
+wouldn't have the same ring.
 
 ![walkies](./walkies.gif)
 
-## Requirements Embedded in Text
-
-To encourage you to read and understand this specification, certain
-*requirements* are embedded in the text without being called out as
-such. Failure to fulfill these requirements will drop your grade.
-
-## Helpful Pointers to the Zybook
-
-You should read and do these chapters. Use them as a resource.
-
-| Concept | Chapter |
-| ------- | ------- |
-| vector | 5.2 |
-| delaying | not in book |
-| iomanip | 9.2 |
-
 ## Overview
 
-You will declare a `vector` and put characters into the vector in
-the following order:
+You will declare a `vector` and put characters into the vector in the
+following order:
 
 | Order | Character | Comment |
 | ----- | --------- | ------- |
@@ -48,32 +32,32 @@ Notice how the characters can be repeated to approximate a tumbling
 animation.
 
 You will loop these characters in such a way that they will be drawn
-marching first to the right across the screen and then back to the
-left as in the animation above.
+marching first to the right across the screen and then back to the left
+as in the animation above.
 
-The width of the tumbling range will be 60 (the animation above
-shows a width of 40 but you are to use 60).
+The width of the tumbling range will be 60 (the animation above shows a
+width of 40 but you are to use 60).
 
-The program runs forever... terminate it with ^c (control-c) or
-the "stop" button in your IDE (if you launched it from there).
+The program runs forever... terminate it with ^c (control-c) or the
+"stop" button in your IDE (if you launched it from there).
 
 ## Use `iomanip` To Do Spacing
 
-The expanding and contracting space to the left of the character
-drawn must be created using `iomanip`. You know how to set the
-width of a field and how to right justify.
+The expanding and contracting space to the left of the character drawn
+must be created using `iomanip`. You know how to set the width of a
+field and how to right justify.
 
 ## Use of Carriage Return To Cause Redrawing
 
 After emitting a full line of characters, your cursor must be forced
-back to column 0. You can accomplish this by emitting `\r` as the
-last thing you print. This is the carriage return... think getting
-to the end of a line on an old time typewriter.
+back to column 0. You can accomplish this by emitting `\r` as the last
+thing you print. This is the carriage return... think getting to the end
+of a line on an old time typewriter.
 
 ![Kermit](./ktpng.gif)
 
-Kermit must be writing in assembly language because all the lines
-he's typing are very short.
+Kermit must be writing in assembly language because all the lines he's
+typing are very short.
 
 ## Do You Need Any Spaces To The Right Of The Character?
 
@@ -81,17 +65,17 @@ Asking for a friend.
 
 ## Use of Precise Integer Types Required
 
-I have previous discussed a generally optional practice of being
-very explicit and precise in using integer types. I spoke about
-`int` potentially having different meanings on different platforms.
-On the other hand, precise types always mean what you wrote.
+I have previous discussed a generally optional practice of being very
+explicit and precise in using integer types. I spoke about `int`
+potentially having different meanings on different platforms. On the
+other hand, precise types always mean what you wrote.
 
 Most c++ compilers will arrange for precise integer type names to be
 available to you - they aren't built into the language but come to us
 from an include file.
 
-If for some reason you get errors from the precise type, then
-add `#include <cinttypes>` to your includes.
+If for some reason you get errors from the precise type, then add
+`#include <cinttypes>` to your includes.
 
 Recall the common precise integer types are:
 
@@ -106,11 +90,10 @@ Recall the common precise integer types are:
 | int32_t | signed 32 bit integer | int |
 | int64_t | signed 64 bit integer | long |
 
-\* maybe - the language standard doesn't precisely define the
-meaning of `char`.
+\* maybe - the language standard doesn't precisely define the meaning of
+`char`.
 
-**In this project, you are required to use the precise integer
-types.**
+**In this project, you are required to use the precise integer types.**
 
 ## Forcing Output Without New Lines
 
@@ -125,21 +108,39 @@ The `endl` is doing two things for you:
 1. Of course, it's giving you a new line but it is also...
 2. Triggers the output to actually render on your console
 
-Console output is buffered for efficiency.
+Actual output via streams like `cout` and `cerr` only happens
+when new lines are emitted. This is called "buffering". Buffering is
+a powerful technique to increase efficiency when:
 
-Actual output only happens when new lines are emitted. In this program, we're not using new lines at all. Instead, after text is output, we'll emit only a carriage return ('\r').
+* the amount of output is a little at a time
 
-To force output that's been buffered up in an output stream,
-(without requiring a new line), do:
+* output is made frequently
+
+* the cost of emitting the output is high
+
+Imagine if we sent each letter in this sentence all the way to your
+console one at a time. It would waste whole dog-years! Instead, output
+only *actually* happens when you ask for a new line to be emitted
+(either by printing `\n` or `endl`).
+
+In this program, we're not using new lines at all.
+
+Instead, after text is output, we'll emit only a carriage return ('\r')
+which doesn't trigger the buffering system to send characters all the
+way to the console.
+
+To force output that's been buffered up in an output stream, (without
+requiring a new line), do:
 
 ```c++
 cout.flush();
 ```
 
-Note that `cout` can be replaced with the name of any output stream.
+The choice of the method name `flush()` is apropos in that you're
+"flushing" any buffered characters all the way to their ultimate end
+point.
 
-The `.flush()` method forces any data buffered inside the stream to
-render out to where ever the stream is connected.
+Note that `cout` can be replaced with the name of any output stream.
 
 ## Causing A Delay
 
@@ -184,8 +185,8 @@ and we have no idea what it means! Instead you must:
 const int32_t MILLISECONDS_DELAY = 100;
 ```
 
-in some appropriate place in your code and then the following
-contains no magic numbers. I KNOW what the parameter means.
+in some appropriate place in your code and then the following contains
+no magic numbers. I KNOW what the parameter means.
 
 ```c++
 this_thread::sleep_for(chrono::milliseconds(MILLISECONDS_DELAY));
@@ -200,9 +201,9 @@ Five hundred milliseconds is half a second, for example.
 
 ## Barbara Woodhouse
 
-[Barbara Woodhouse](https://en.wikipedia.org/wiki/Barbara_Woodhouse)
-was a pre-Internet phenom world renowned dog trainer. From
-her, "Walkies" and "Sit tah" entered the world's lexicon.
+[Barbara Woodhouse](https://en.wikipedia.org/wiki/Barbara_Woodhouse) was
+a pre-Internet phenom world renowned dog trainer. From her, "Walkies"
+and "Sit tah" entered the world's lexicon.
 
 Here she is:
 
