@@ -454,6 +454,7 @@ to a file, separating it from the rest of the output going to `cout`.
 Why 2?
 
 | FD | common name | where |
+| -- | ----------- | ----- |
 | 0  | stdin  | defaults to your console keyboard |
 | 1  | stdout | defaults to your console output |
 | 2  | stderr | also defaults to your console output |
