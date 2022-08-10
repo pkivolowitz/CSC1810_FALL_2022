@@ -1,23 +1,5 @@
 # Redactor-Matic
 
-## Helpful Pointers to the Zybook
-
-You should read and do these chapters. Use them as a resource.
-
-| Concept | Chapter |
-| ------- | ------- |
-| argv / argc | 15.5 |
-| cerr | not in book |
-| errno / perror | not in book |
-| ifstream | 9.1, 9.5 beginning |
-| string.c_str | not in book |
-| string.find | 5.12 |
-| string.length | 5.11, 5.12 |
-| string.npos | 5.12 |
-| string.push_back | 5.12 |
-| string.replace | 5.12 |
-| terminal | kinda 15.5 |
-
 ## About This Specification
 
 To encourage you to really read this specification closely, various
@@ -143,6 +125,12 @@ See the beginning of Zybooks 9.5.
 	fin.is_open()
 ```
 
+<figure>
+  <img src="professor_k_sez.jpg" style="width:60%;">
+  <figcaption>NEVER ASSUME A FILE OPEN SUCCEEDED!</figcaption>
+</figure>
+<br/>
+
 ## Printing Error Messages
 
 ### Examples of **BAD** Error Messages
@@ -151,9 +139,7 @@ First, some **BAD** error messages:
 
 A favorite from Microsoft:
 
-```text
-Error: No Error.
-```
+![Error: No Error](./no-error.png)
 
 Thank you for this next message... very informative.
 
@@ -168,6 +154,14 @@ Error: A file didn't open.
 ```
 
 Really? Which friggen file?
+
+Here's a goodie:
+
+<figure>
+  <img src="something.png" style="width:60%;">
+  <figcaption>נס גדול היה שם</figcaption>
+</figure>
+<br/>
 
 ### What Makes a Good Error Message?
 
@@ -198,7 +192,7 @@ Error code: 09001282.
 ```
 
 This is marginally better than the **BAD** example above. At least it
-tells the user how to move forward (contact technical support).
+tells the user how to move forward (how to contact technical support).
 
 More elaborately, for internal errors you might prepare a full
 diagnostic report and even offer to send it automatically (but this is a
@@ -228,6 +222,8 @@ cout << "Have a nice day." << endl;
 ```
 
 **In this project, errors must be printed to `cerr`.**
+
+For more information on `cerr` see bottom of file.
 
 ## `errno` and `perror()`
 
@@ -268,6 +264,10 @@ References for new things used:
 | `string.length()` | zybooks 5.11 |
 | `string.npos` | zybooks 5.12 |
 | `ifstream` | zybooks 9.5 (beginning) |
+
+So that you may test with a larger body of text, a file is supplied
+containing what your program will think is your user input. This
+slight-of-hand will be accomplished using command line *redirection*.
 
 ## Building the string of asterisks
 
@@ -409,3 +409,53 @@ foo.foo: No such file or directory
 * Use comments to help you understand your own code.
 
 * Plan out the program with pencil and paper before you start coding.
+
+## Example of Using `cerr`
+
+Let's take this program:
+
+```c++
+#include <iostream>                                                 // 1 
+                                                                    // 2 
+using namespace std;                                                // 3 
+                                                                    // 4 
+const int32_t MAX_LINES = 1000;                                     // 5 
+const int32_t MAGIC_ERROR_LINE = 654;                               // 6 
+                                                                    // 7 
+int main() {                                                        // 8 
+    for (int32_t counter = 0; counter < MAX_LINES; counter++) {     // 9 
+        if (counter == MAGIC_ERROR_LINE) {                          // 10 
+            cerr << "Uh oh.  Bad!\n";                               // 11 
+        } else {                                                    // 12 
+            cout << "All is well!\n";                               // 13 
+        }                                                           // 14 
+    }                                                               // 15 
+    return 0;                                                       // 16 
+}                                                                   // 17 
+```
+
+Nearly all the output is going to `cout`. In fact, there is a lot of
+output going to `cout`. And one line is an error. Will you spot it?
+
+Fortunately, you can do this:
+
+```text
+% ./a.out 2> errors.txt
+a l l   t h e   c o u t   o u t p u t   g o e s   h e r e
+% cat errors.txt 
+Uh oh.  Bad!
+```
+
+Ah, that makes spotting the life-saving error message easier!
+
+The above is an example of *redirection*. We redirected `cerr`
+to a file, separating it from the rest of the output going to `cout`.
+
+Why 2?
+
+| FD | common name | where |
+| 0  | stdin  | defaults to your console keyboard |
+| 1  | stdout | defaults to your console output |
+| 2  | stderr | also defaults to your console output |
+
+What is *FD*? You'll find out :)
