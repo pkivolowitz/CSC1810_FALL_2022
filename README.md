@@ -15,13 +15,16 @@ I am not a religious person. However, 1 Corinthians 13 has this to say:
 thought as a child; but when I became a man, I put away childish things.*
 
 The point being, success in college is a function of hard work and
-discipline. 
+discipline. The strategies you employed for success in school prior
+to college may not work for you here. What will work:
 
 * Hard work, by you. No one else.
 
 * Discipline, by you. No one else.
 
-A corollary: I generally help those who help themselves. The preceding
+A corollary: "I generally help those who help themselves."
+
+The preceding
 once showed up in a teaching evaluation. As. If. This. Was. A. Bad.
 Thing.
 
@@ -63,7 +66,11 @@ class missed.**
 
 The text is an online service hosted at zyBooks.com. Of note is that
 being online, it offers live exercises within the “book” that give
-immediate feedback. These exercises are graded. Not doing these is like
+immediate feedback.
+
+**These exercises are graded.**
+
+Not doing these is like
 tossing your grade in the trash.
 
 1. Sign in or create an account at learn.zybooks.com
@@ -77,7 +84,9 @@ Readings are assigned via Schoology.
 ## Chapters / Subchapters to be Covered
 
 You are encouraged to read ahead. Below are the chapters and
-subchapters we will cover. **However, we will frequently cover these
+subchapters we will cover.
+
+**However, we will frequently cover these
 out-of-order.**
 
 | Chapter | Subchapters |
@@ -90,6 +99,9 @@ out-of-order.**
 | 6 | All |
 | 9 | Not 9.9 |
 | 15 | Only 1, 2, 3, 11 through 18 |
+
+There may be other chapters I have missed, that are associated with
+certain projects (for instance).
 
 ### "Jumping Around" in the Book
 
@@ -246,7 +258,7 @@ For your convenience:
 
 ## Info for Cool Kids
 
-* Various symbols are named [here](./symbols.md)
+* Various keyboard symbols are named [here](./symbols.md)
 
 ## Topics Covered
 

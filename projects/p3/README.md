@@ -1,4 +1,4 @@
-# Walkies!
+# Walkies
 
 This project makes use of:
 

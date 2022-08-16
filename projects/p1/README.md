@@ -1,5 +1,10 @@
 # Project 1 - More Sophisticated Logical Selection
 
+This project will be assigned a small number of weeks into the term. If
+you are one of the cool kids who took it upon themselves to inspect the
+projects before the start of classes, things will probably not make
+much sense... give it a few weeks.
+
 ## Requirements Embedded in Text
 
 To encourage you to read and understand this specification, certain
