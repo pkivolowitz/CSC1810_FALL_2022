@@ -1,7 +1,10 @@
 # Symbol names
 
-Computer people have different names for a lot of things. The
+Computer people have different names for a lot of things. 
+
+The
 less well we are understood by non-computer folk, the more we get paid.
+
 Just kidding. Not kidding.
 
 | Symbol(s) | Are called... |
