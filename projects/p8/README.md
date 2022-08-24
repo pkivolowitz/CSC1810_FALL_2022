@@ -22,7 +22,7 @@ simulate via the command line.
 
 If no command line argument is given, then assume a default of 1 card.
 
-If a bad number of cards is simulated (i.e. less than 1), you must
+If a bad number of cards is specified (i.e. less than 1), you must
 print an error message to `cerr` and cause the program to return 1.
 
 ## Precise integers must be used
