@@ -151,7 +151,7 @@ it leads.
 | 1 | [Here](https://www.youtube.com/watch?v=oX654TT3ixc&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=1) | |
 | 2 | [Here](https://www.youtube.com/watch?v=N_JowoS2lR8&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=2) | |
 | 3 | [Here](https://www.youtube.com/watch?v=tJjDYe3_Vmg&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=3) | |
-| 4 | [Here](https://www.youtube.com/watch?v=u4CQYyTWGYA&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=4) | |
+| 4 | [Here](https://www.youtube.com/watch?v=u4CQYyTWGYA&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=4) | Maybe don't do this yet |
 | 5 | [Here](https://www.youtube.com/watch?v=13GEtlnAMLU&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=5) | |
 | 6 | [Here](https://www.youtube.com/watch?v=dYQLs5gbUiE&list=PLnE1d1TMuFwPqZq0caXSzHM4u2UdPmhW4&index=6) | [NOTE](./README.md#installing-vs-code-on-mac) |
 | 7 | See "Installing BREW on Mac" below | |
