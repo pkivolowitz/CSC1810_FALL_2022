@@ -265,10 +265,10 @@ For your convenience:
 | Day | Content | Out-of-Order Chapters Needed<br/>For Projects |
 | --- | ------- | ---------------------------- |
 | 9/7 | Syllabus and Install + Demos To Pass the Time | |
-| 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, signed integer types, assignment, `if`, `goto`, labels | |
-| 9/12 | Review, `while`, first look at debugging, floating point types | |
-| 9/14 | Review, P1 Assigned | 3.1, 4.2, 7.15, 9.1 |
-| 9/16 | | |
+| 9/9 | `main()` and concept of functions, `namespace`, `cout`, `endl`, flow charts, signed integer types, assignment, `if`, maybe `goto`, labels | |
+| 9/12 | Review, `while`, `if`, flow charts, first look at debugging, floating point types | |
+| 9/14 | Review, P1 Assigned, `for`, `break`, `continue`, flow charts, `while`  | 3.1, 4.2, 7.15, 9.1 |
+| 9/16 | Review, practice | |
 | 9/19 | | |
 | 9/21 | Review, P1 Due, P2 Assigned| 4.4, 4.5, 4.7, 9.2 |
 | 9/23 | | |
