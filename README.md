@@ -189,7 +189,7 @@ Now you wait.
 When complete, copy the next two lines then paste into your terminal:
 
 ```text
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/perrykivolowitz/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/YOUR_USER_NAME_GOES_HERE/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
