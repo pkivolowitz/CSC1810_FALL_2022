@@ -56,5 +56,8 @@
 		"vthinks",
 		"vwalks",
 		"vyells"
-	]
+	],
+	"files.associations": {
+		"iosfwd": "cpp"
+	}
 }

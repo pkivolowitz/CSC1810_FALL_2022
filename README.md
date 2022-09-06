@@ -272,3 +272,21 @@ For your convenience:
 | 9/19 | | |
 | 9/21 | Review, P1 Due, P2 Assigned| 4.4, 4.5, 4.7, 9.2 |
 | 9/23 | | |
+
+## Strong Advice
+
+<figure>
+  <img src="./professor_k_sez.jpg" style="width:60%;">
+  <figcaption style="width:60%;">
+  	Start Early. Work Steadily.
+  </figcaption>
+</figure>
+
+## More Strong Advice
+
+<figure>
+  <img src="./shoulda.jpg" style="width:60%;">
+  <figcaption style="width:60%;">
+  	Start Early. Work Steadily.
+  </figcaption>
+</figure>
