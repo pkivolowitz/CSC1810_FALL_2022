@@ -45,10 +45,22 @@ Section 2 meets MWF 13:35 to 14:40 Clausen 114.
 
 From the [syllabus](./syllabus/CSC%201810%20Fa22%20Kivolowitz.pdf):
 
-**For every five classes missed, your final grade will be reduced by a
+~~For every five classes missed, your final grade will be reduced by a
 full letter. Absences due to sports, music, or any other campus activity
 count as an unexcused absences. To be clear: A full letter grade means
-exactly that. For example, a B+ will be reduced to a C+.**
+exactly that. For example, a B+ will be reduced to a C+.~~
+
+The previous language did not convey what I intended. Instead, and to
+be more clear, upon missing your sixth class (and eleventh,
+sixteenth, etc) your letter grade will be reduced by one full letter.
+Put another way:
+
+* If you miss 1, 2, 3, 4 or 5 classes - there is no penalty.
+
+* Upon your sixth miss, your letter grade will be reduced by a full
+letter.
+
+This will be updated in the syllabus as well.
 
 ## Arriving Late / Leaving Early
 
