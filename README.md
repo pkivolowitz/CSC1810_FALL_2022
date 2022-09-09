@@ -231,6 +231,9 @@ WSL 1. Since then WSL 2 has come to the fore and Windows 11 is more
 common. Installation is now slightly harder, in the name of progress.
 It is also slightly easier, in the name of progress.
 
+I have confirmed these steps mostly work for Windows 10 as well but
+you're better off following the video above if you have Windows 10.
+
 In addition to making sure Windows Subsystem for Linux is checked in
 *Turn Windows Features On and Off*, you must also check the boxes
 for Hyper-V (this may require drilling down into the setting using
