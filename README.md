@@ -224,6 +224,95 @@ index of the video in its description. Click "Show More" to
 reveal the index allowing you to skip to what you need (after you
 have seen the entire video).
 
+### Windows 11
+
+**NOTE** - the video was created in June 2022 on Windows 10 using
+WSL 1. Since then WSL 2 has come to the fore and Windows 11 is more
+common. Installation is now slightly harder, in the name of progress.
+It is also slightly easier, in the name of progress.
+
+In addition to making sure Windows Subsystem for Linux is checked in
+*Turn Windows Features On and Off*, you must also check the boxes
+for Hyper-V (this may require drilling down into the setting using
+the + sign button). If Hyper-V Hypervisor (found underneath Hyper-V /
+Hyper-V Platform) is grayed out, you cannot use WSL 2 and must switch
+to WSL 1.
+
+<figure>
+  <img src="./hyper-v-01.png" style="width:60%;">
+  <figcaption style="width:60%;">Notice Hyper-V Hypervisor
+  is grayed-out. This means you cannot use WSL 2 and must
+  switch to WSL 1. This is described below.
+  </figcaption>
+</figure>
+
+You must also check the box for Virtual Machine Platform.
+
+<figure>
+  <img src="./hyper-v-2.png" style="width:60%;">
+  <figcaption style="width:60%;">
+  Here are the other items to be checked: Virtual Machine Platform and
+  Windows Subsystem for Linux.
+  </figcaption>
+</figure>
+
+After hitting OK you'll have to reboot.
+
+Then, and follow carefully here:
+
+1. click the Windows key or button.
+
+2. type `cmd` (do not hit ENTER)
+
+3. Press and hold SHIFT and CONTROL and while holding these, press
+the ENTER key.
+
+You should see this:
+
+<figure>
+  <img src="./permission.png" style="width:60%;">
+  <figcaption style="width:60%;">
+  Click on Yes
+  </figcaption>
+</figure>
+
+Click on Yes.
+
+You should see this:
+
+<figure>
+  <img src="./cmd.png" style="width:60%;">
+  <figcaption style="width:60%;">
+  Notice this command prompt indicates that it is in Administrator mode
+  (look at the title bar).
+  </figcaption>
+</figure>
+
+In this command prompt type the following:
+
+1. `wsl --shutdown`
+
+2. `wsl --list`
+
+   If the output indicates that any distros are installed, please see
+   me.
+
+3. `wsl --install -d Ubuntu`
+
+   And you're off to the races. This will install Ubuntu 20 something.
+
+### Switching to WSL 1
+
+In some cases it may be necessary to switch to WSL 1. For example, if
+you are using Parallels to Install Windows 11 on a Mac.
+
+To change WSL versions, open an administrator command prompt using the
+instructions above. Then type:
+
+`wsl --set-default-version 1` and hit ENTER.
+
+Then go back to step 3 above.
+
 ### For Both Windows and Mac
 
 #### Getting the Project Creator
