@@ -370,9 +370,10 @@ For your convenience:
 | --- | ------- | ---------------------------- |
 | 9/7 | Syllabus | |
 | 9/9 | Installs | |
-| 9/12 | `main()` and concept of functions, `namespace`, `cout`, `endl`, flow charts, signed integer types, assignment, `if`, maybe `goto`, labels | |
-| 9/14 | Review, `while`, `if`, flow charts, first look at debugging, floating point types | |
-| 9/16 | Review, P1 Assigned, `for`, `break`, `continue`, flow charts, `while`  | 3.1, 4.2, 7.15, 9.1 |
+| 9/12 | `main()` and concept of functions, `namespace`, `cout`, `endl` | |
+| 9/14 | Review, flow charts, signed integer types, assignment, `if` | |
+| | Review, `while`, `if`, flow charts, first look at debugging, floating point types | |
+| | Review, P1 Assigned, `for`, `break`, `continue`, flow charts, `while`  | 3.1, 4.2, 7.15, 9.1 |
 
 ## Strong Advice
 
