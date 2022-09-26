@@ -197,8 +197,14 @@ Enter degrees F: 32
 Select from F, C or Q (to quit): C
 Enter degrees C: 100
 100 C is 212 degrees F.
-Select from F, C or Q (to quit): SPLAT!
+Select from F, C or Q (to quit): S
 Bad command.
+Select from F, C or Q (to quit): SPLAT
+Bad command.
+Select from F, C or Q (to quit): Bad command.
+Select from F, C or Q (to quit): Bad command.
+Select from F, C or Q (to quit): Bad command.
+Select from F, C or Q (to quit): Bad command.
 Select from F, C or Q (to quit): Q
 ```
 
@@ -208,7 +214,9 @@ what to do if the user enters something other than F, C or Q.
 ## Requirements
 
 You will use some combinations of `if`, `else if` and
-`else`.
+`else`. You may use either `char` or `string` for your input; if you
+use `string`, your output shouldn't output multiple "Bad command." from
+a multi-character input.
 
 You are to turn in a flowchart showing the structure of your program.
 Remember that diamonds are used for `if` statements. Also remember to
