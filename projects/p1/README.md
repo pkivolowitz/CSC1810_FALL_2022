@@ -22,10 +22,17 @@ You should read and do these chapters. Use them as a resource.
 | iostream | 9.1 |
 | namespace | 7.15 but not at all clear - refer to class |
 | while loop | 4.2 |
+| string | 5.10, 5.11 |
 
 ## Goal
 
-Starting with the code supplied here:
+The following code serves as an example. 
+
+*The project is different.*
+
+*The project is different.*
+
+*The project is different.*
 
 ```c++
 #include <iostream>                                                     // 1 
@@ -180,13 +187,14 @@ code. The implicit `if` is that you enter the block of code only `if`
 the condition evaluates to true.
 
 The program you will write is more flexible than the one given to you.
-This project's code asks the user which direction they want to perform
-the temperature conversion: from Fahrenheit to Celsius or from Celsius
-to Fahrenheit.
 
-After you prompt the user, they
+**This project's code asks the user which direction they want to perform
+the temperature conversion: from Fahrenheit to Celsius or from Celsius
+to Fahrenheit.**
+
+**After you prompt the user, they
 choose between converting from F to C or from C to F. They can also
-elect to quit the program.
+elect to quit the program.**
 
 Here is what your output should look like:
 
@@ -204,6 +212,19 @@ Select from F, C or Q (to quit): Q
 
 The snippet above shows all of the potential code paths including
 what to do if the user enters something other than F, C or Q.
+
+Notice the program continues to run over and over until a Q is
+entered. This suggests that there is a loop encompassing the rest
+of the code.
+
+You can capture the single letter input using a `char` or `string`.
+If you capture the single letter with a `char` and enter multiple
+letters, each letter will be read individually (over several 
+consecutive loops). This is OK.
+
+If you enter several characters captureed by a `string`, the
+entire string will be captured at once triggering only one pass
+through the loop.
 
 ## Requirements
 
