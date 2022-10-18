@@ -155,6 +155,8 @@ int main() {                                                            // 7
 }                                                                       // 20 
 ```
 
+NOTE: The project is different.
+
 Why is this cleaner? Look:
 
 ![flowchart](./p2_second_version.png)
@@ -187,6 +189,7 @@ code. The implicit `if` is that you enter the block of code only `if`
 the condition evaluates to true.
 
 The program you will write is more flexible than the one given to you.
+Start from scratch using the example code for hints.
 
 **This project's code asks the user which direction they want to perform
 the temperature conversion: from Fahrenheit to Celsius or from Celsius
@@ -219,10 +222,10 @@ of the code.
 
 You can capture the single letter input using a `char` or `string`.
 If you capture the single letter with a `char` and enter multiple
-letters, each letter will be read individually (over several 
+letters, each letter will be read individually (over several
 consecutive loops). This is OK.
 
-If you enter several characters captureed by a `string`, the
+If you enter several characters captured by a `string`, the
 entire string will be captured at once triggering only one pass
 through the loop.
 
