@@ -212,7 +212,7 @@ pointers. Hint: pointers are not scary.
 
 ### Common mistake
 
-Things can end in tears (EOT) if you attempt to use an argument that
+Things can end in tears (EiT) if you attempt to use an argument that
 isn't there. So, don't do that. Check `argc` to determine if any
 particular index into `argv` is valid or not.
 
