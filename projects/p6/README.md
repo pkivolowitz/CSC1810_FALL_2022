@@ -268,7 +268,7 @@ I have supplied a number of test files.
 
 [test1.txt](./test1.txt) contains one opening and one closing brace.
 
-[test2.txt](./test1.txt) contains multiple nested marks properly
+[test2.txt](./test2.txt) contains multiple nested marks properly
 balanced.
 
 [test3.txt](./test3.txt) contains a mismatch on line 4.
